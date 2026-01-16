@@ -3,8 +3,7 @@ import type { Course } from "@/lib/types";
 
 export default function CourseCard({ course }: { course: Course }) {
   return (
-    <div className="group glass relative overflow-hidden rounded-2xl p-6 shadow-card">
-      <span className="absolute left-0 top-0 h-0.5 w-full bg-gradient-to-r from-accent to-secondary opacity-0 transition group-hover:opacity-100" />
+    <div className="glass rounded-2xl border border-border/60 p-6 transition hover:border-accent/50">
       <div className="flex flex-col gap-3">
         <div className="flex flex-wrap gap-2">
           <span className="pill">{course.duration}</span>

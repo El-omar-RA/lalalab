@@ -2,6 +2,7 @@
 import { courses } from "@/lib/courses";
 import { getCatalog } from "@/lib/catalog";
 import CourseCard from "@/components/CourseCard";
+import Image from "next/image";
 
 const featuredCategories = [
   {
@@ -63,16 +64,16 @@ export default function HomePage() {
 
   return (
     <div>
-      <section className="relative overflow-hidden border-b border-border bg-hero-glow">
-        <div className="mx-auto grid max-w-6xl gap-10 px-4 py-16 md:grid-cols-2 md:items-center">
+      <section className="relative overflow-hidden border-b border-border">
+        <div className="mx-auto grid max-w-6xl gap-12 px-4 py-20 md:grid-cols-2 md:items-center">
           <div className="space-y-6">
             <p className="pill">Futuristic cultivation systems</p>
             <h1 className="text-3xl font-semibold text-text md:text-5xl">
               LalaLab - Mushroom Growing Supplies & Courses
             </h1>
             <p className="text-base text-muted md:text-lg">
-              Precision tools, lab-ready substrates, and advanced training for
-              growers who want predictable, scalable results.
+              Minimal, precise, and built for repeatable outcomes. Learn modern
+              mycology and source clean lab-grade supplies.
             </p>
             <div className="flex flex-wrap gap-3">
               <Link className="btn btn-primary" href="/courses/online">
@@ -83,39 +84,49 @@ export default function HomePage() {
               </Link>
             </div>
           </div>
-          <div className="glass rounded-3xl p-8 shadow-glow">
-            <h2 className="text-lg font-semibold text-text">
-              Course-first learning
-            </h2>
-            <p className="mt-3 text-sm text-muted">
-              Our courses lead every experience. Learn sterile technique, spawn
-              science, and fruiting workflows before you scale.
-            </p>
-            <div className="mt-6 grid gap-4">
-              {courses.map((course) => (
-                <div
-                  key={course.id}
-                  className="rounded-2xl border border-border bg-[rgba(6,10,20,0.5)] p-4"
-                >
-                  <p className="text-sm font-semibold text-text">
-                    {course.title}
-                  </p>
-                  <p className="text-xs text-muted">{course.duration}</p>
-                  {course.location ? (
-                    <p className="text-xs text-muted">{course.location}</p>
-                  ) : null}
-                </div>
-              ))}
+          <div className="grid gap-6">
+            <div className="art-frame glass">
+              <div className="relative aspect-[4/3] overflow-hidden rounded-2xl">
+                <Image
+                  src="/images/mushroom-art-01.svg"
+                  alt="Futuristic mushroom art study"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+              </div>
+              <p className="mt-4 text-xs uppercase tracking-[0.2em] text-muted">
+                Art Study 01
+              </p>
+            </div>
+            <div className="art-frame glass">
+              <div className="relative aspect-[4/3] overflow-hidden rounded-2xl">
+                <Image
+                  src="/images/mushroom-art-02.svg"
+                  alt="Minimal mushroom growth art"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+              </div>
+              <p className="mt-4 text-xs uppercase tracking-[0.2em] text-muted">
+                Art Study 02
+              </p>
             </div>
           </div>
         </div>
       </section>
 
       <section className="mx-auto max-w-6xl px-4 py-16">
-        <h2 className="text-2xl font-semibold text-text">Featured Courses</h2>
-        <p className="mt-2 text-sm text-muted">
-          Start online or join us in Denmark, WA.
-        </p>
+        <div className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
+          <div>
+            <h2 className="text-2xl font-semibold text-text">Featured Courses</h2>
+            <p className="mt-2 text-sm text-muted">
+              Course-first. Start online or join us in Denmark, WA.
+            </p>
+          </div>
+          <Link className="btn btn-ghost" href="/courses">
+            Explore Courses
+          </Link>
+        </div>
         <div className="mt-8 grid gap-6 md:grid-cols-2">
           {courses.map((course) => (
             <CourseCard key={course.id} course={course} />
@@ -123,7 +134,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="border-y border-border bg-[rgba(6,10,20,0.85)]">
+      <section className="border-y border-border bg-[rgba(6,10,20,0.8)]">
         <div className="mx-auto max-w-6xl px-4 py-16">
           <h2 className="text-2xl font-semibold text-text">
             Featured Product Categories
@@ -133,9 +144,8 @@ export default function HomePage() {
               <Link
                 key={category.name}
                 href={`/shop?category=${encodeURIComponent(category.name)}`}
-                className="group glass relative overflow-hidden rounded-2xl p-5"
+                className="glass rounded-2xl border border-border/60 p-5 transition hover:border-accent/60"
               >
-                <span className="absolute left-0 top-0 h-0.5 w-full bg-gradient-to-r from-accent to-secondary opacity-0 transition group-hover:opacity-100" />
                 <h3 className="text-base font-semibold text-text">
                   {category.name}
                 </h3>
@@ -154,7 +164,7 @@ export default function HomePage() {
           {testimonials.map((item) => (
             <div key={item.name} className="glass rounded-2xl p-6">
               <p className="text-sm text-muted">"{item.quote}"</p>
-              <p className="mt-4 text-xs font-semibold text-accent">
+              <p className="mt-4 text-xs uppercase tracking-[0.2em] text-accent">
                 {item.name}
               </p>
             </div>
@@ -173,7 +183,7 @@ export default function HomePage() {
               </div>
             ))}
           </div>
-          <Link className="btn btn-ghost mt-6" href="/contact">
+          <Link className="btn btn-ghost mt-8" href="/contact">
             Ask a question
           </Link>
         </div>

@@ -5,8 +5,7 @@ import ProductImage from "@/components/ProductImage";
 
 export default function ProductCard({ product }: { product: Product }) {
   return (
-    <div className="group glass relative overflow-hidden rounded-2xl p-4 shadow-card">
-      <span className="absolute left-0 top-0 h-0.5 w-full bg-gradient-to-r from-accent to-secondary opacity-0 transition group-hover:opacity-100" />
+    <div className="glass rounded-2xl border border-border/60 p-4 transition hover:border-accent/50">
       <div className="relative aspect-[4/3] overflow-hidden rounded-xl">
         <ProductImage
           src={product.image}
@@ -16,7 +15,9 @@ export default function ProductCard({ product }: { product: Product }) {
         />
       </div>
       <div className="mt-4 flex flex-col gap-2">
-        <span className="text-xs text-muted">{product.category}</span>
+        <span className="text-xs uppercase tracking-[0.2em] text-muted">
+          {product.category}
+        </span>
         <h3 className="text-sm font-semibold text-text">
           {product.clean_name || product.name}
         </h3>

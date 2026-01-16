@@ -1,5 +1,6 @@
 ﻿"use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import CartButton from "@/components/cart/CartButton";
@@ -16,11 +17,19 @@ export default function Navbar() {
   const pathname = usePathname();
 
   return (
-    <header className="sticky top-0 z-50 border-b border-border bg-[rgba(6,10,20,0.8)] backdrop-blur">
+    <header className="sticky top-0 z-50 border-b border-border bg-[rgba(6,10,20,0.7)] backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
         <Link href="/" className="flex items-center gap-3">
-          <span className="h-2 w-2 rounded-full bg-accent shadow-[0_0_12px_rgba(245,197,66,0.8)]" />
-          <span className="text-lg font-semibold text-text">LalaLab</span>
+          <div className="relative h-10 w-28">
+            <Image
+              src="/images/lalalab-logo.png"
+              alt="LalaLab logo"
+              fill
+              sizes="112px"
+              className="object-contain"
+              priority
+            />
+          </div>
         </Link>
         <nav className="hidden items-center gap-6 md:flex" aria-label="Primary">
           {links.map((link) => {
@@ -32,7 +41,7 @@ export default function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`text-sm transition ${
+                className={`text-xs uppercase tracking-[0.2em] transition ${
                   isActive ? "text-accent" : "text-muted hover:text-accent"
                 }`}
                 aria-current={isActive ? "page" : undefined}
@@ -44,7 +53,6 @@ export default function Navbar() {
         </nav>
         <CartButton />
       </div>
-      <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-[rgba(37,99,235,0.55)] to-transparent" />
     </header>
   );
 }

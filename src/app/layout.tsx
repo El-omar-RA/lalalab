@@ -20,6 +20,23 @@ export const metadata: Metadata = {
   title: "LalaLab - Mushroom Growing Supplies & Courses",
   description:
     "Futuristic mushroom cultivation supplies and courses. Online training and Denmark WA 3-day intensive workshops.",
+  icons: {
+    icon: "/images/lalalab-logo.png",
+    apple: "/images/lalalab-logo.png",
+  },
+  openGraph: {
+    title: "LalaLab - Mushroom Growing Supplies & Courses",
+    description:
+      "Futuristic mushroom cultivation supplies and courses. Online training and Denmark WA 3-day intensive workshops.",
+    images: [
+      {
+        url: "/images/lalalab-logo.png",
+        width: 1200,
+        height: 900,
+        alt: "LalaLab logo",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({

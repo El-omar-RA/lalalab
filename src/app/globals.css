@@ -22,8 +22,9 @@ body {
   font-family: var(--font-body);
   min-height: 100vh;
   background-image:
-    radial-gradient(1200px 600px at 10% -10%, rgba(37, 99, 235, 0.25), transparent),
-    radial-gradient(800px 500px at 90% -20%, rgba(34, 197, 94, 0.12), transparent);
+    radial-gradient(900px 500px at 10% -20%, rgba(37, 99, 235, 0.18), transparent),
+    radial-gradient(700px 400px at 90% 0%, rgba(245, 197, 66, 0.08), transparent),
+    linear-gradient(180deg, rgba(6, 10, 20, 1), rgba(6, 10, 20, 0.92) 45%, rgba(6, 10, 20, 1));
   background-attachment: fixed;
 }
 
@@ -47,13 +48,14 @@ a:hover {
 
 @layer components {
   .glass {
-    background: rgba(11, 18, 38, 0.6);
+    background: rgba(11, 18, 38, 0.42);
     border: 1px solid var(--color-border);
-    backdrop-filter: blur(18px);
+    backdrop-filter: blur(16px);
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.02), 0 24px 60px rgba(0, 0, 0, 0.45);
   }
 
   .btn {
-    @apply inline-flex items-center justify-center gap-2 rounded-full px-5 py-2 text-sm font-medium transition;
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-5 py-2 text-xs font-semibold uppercase tracking-[0.18em] transition;
   }
 
   .btn:focus-visible {
@@ -73,6 +75,10 @@ a:hover {
   }
 
   .pill {
-    @apply inline-flex items-center rounded-full border border-border px-3 py-1 text-xs text-muted;
+    @apply inline-flex items-center rounded-full border border-border px-3 py-1 text-[11px] uppercase tracking-[0.2em] text-muted;
+  }
+
+  .art-frame {
+    @apply rounded-3xl border border-border bg-[rgba(6,10,20,0.4)] p-4;
   }
 }
