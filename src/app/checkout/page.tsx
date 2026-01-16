@@ -2,7 +2,7 @@
 
 export const metadata = {
   title: "Checkout - LalaLab",
-  description: "Review your cart. Payments coming next.",
+  description: "Review your cart and complete payment with Stripe.",
 };
 
 export default function CheckoutPage() {
@@ -10,7 +10,7 @@ export default function CheckoutPage() {
     <div className="mx-auto max-w-6xl px-4 py-16">
       <h1 className="text-3xl font-semibold text-text">Checkout</h1>
       <p className="mt-3 text-sm text-muted">
-        Payments coming next (Stripe). Request an invoice or pay link below.
+        Complete payment via Stripe Checkout. Your payment is processed securely.
       </p>
       <div className="mt-10">
         <CheckoutClient />
