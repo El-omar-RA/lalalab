@@ -1,4 +1,4 @@
-import { PriceInfo } from "@/lib/types";
+ï»¿import { PriceInfo } from "@/lib/types";
 
 export function cn(...classes: Array<string | false | null | undefined>) {
   return classes.filter(Boolean).join(" ");
@@ -23,7 +23,7 @@ export function parsePrice(raw: string, priceMinRaw?: string): PriceInfo {
 
   const lower = raw.toLowerCase();
   const hasRangeHint =
-    /price range|through/.test(lower) || /\d\s*[-–]\s*\d/.test(lower);
+    /price range|through/.test(lower) || /\d\s*-\s*\d/.test(lower);
 
   let min: number | undefined;
   let max: number | undefined;

@@ -1,4 +1,4 @@
-import "./globals.css";
+﻿import "./globals.css";
 import type { Metadata } from "next";
 import { Space_Grotesk, Sora } from "next/font/google";
 import Navbar from "@/components/Navbar";

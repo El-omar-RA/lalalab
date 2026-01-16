@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import { courses } from "@/lib/courses";
 import { getCatalog } from "@/lib/catalog";
 import CourseCard from "@/components/CourseCard";

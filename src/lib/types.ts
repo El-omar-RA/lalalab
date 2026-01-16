@@ -1,4 +1,4 @@
-export type RawProduct = {
+﻿export type RawProduct = {
   name: string;
   price: string;
   link: string;
