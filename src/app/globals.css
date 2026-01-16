@@ -1,6 +1,5 @@
-﻿@tailwind base;
-@tailwind components;
-@tailwind utilities;
+﻿@config "../../tailwind.config.ts";
+@import "tailwindcss";
 
 :root {
   --color-base: #060a14;
@@ -55,8 +54,10 @@ a:hover {
 
   .btn {
     @apply inline-flex items-center justify-center gap-2 rounded-full px-5 py-2 text-sm font-medium transition;
-    @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary;
-    @apply focus-visible:ring-offset-2 focus-visible:ring-offset-[color:var(--color-base)];
+  }
+
+  .btn:focus-visible {
+    @apply outline-none ring-2 ring-primary ring-offset-2 ring-offset-[color:var(--color-base)];
   }
 
   .btn-primary {
