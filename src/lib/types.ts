@@ -4,9 +4,18 @@
   link: string;
   image: string;
   description?: string;
+  reviews?: Review[];
+  review_count?: number;
   clean_name?: string;
   price_min?: string;
   category: string;
+};
+
+export type Review = {
+  author?: string;
+  rating?: number;
+  text?: string;
+  date?: string;
 };
 
 export type PriceInfo = {

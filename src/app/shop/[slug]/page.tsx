@@ -69,6 +69,48 @@ export default function ProductDetailPage({
           </div>
         </div>
       </div>
+      <div className="mt-12 grid gap-10 md:grid-cols-2">
+        <section>
+          <h2 className="text-xl font-semibold text-text">Description</h2>
+          {product.description ? (
+            <p className="mt-3 text-sm text-muted">{product.description}</p>
+          ) : (
+            <p className="mt-3 text-sm text-muted">
+              No description available yet.
+            </p>
+          )}
+        </section>
+        <section>
+          <h2 className="text-xl font-semibold text-text">Reviews</h2>
+          {product.reviews && product.reviews.length > 0 ? (
+            <div className="mt-3 space-y-4">
+              {product.reviews.map((review, index) => (
+                <div
+                  key={`${review.author || "review"}-${index}`}
+                  className="glass rounded-xl p-4 text-sm text-muted"
+                >
+                  <div className="flex flex-wrap items-center gap-2 text-text">
+                    <span className="font-semibold">
+                      {review.author || "Anonymous"}
+                    </span>
+                    {typeof review.rating === "number" && (
+                      <span className="text-xs text-accent">
+                        Rating: {review.rating}/5
+                      </span>
+                    )}
+                    {review.date && (
+                      <span className="text-xs text-muted">{review.date}</span>
+                    )}
+                  </div>
+                  {review.text && <p className="mt-2">{review.text}</p>}
+                </div>
+              ))}
+            </div>
+          ) : (
+            <p className="mt-3 text-sm text-muted">No reviews yet.</p>
+          )}
+        </section>
+      </div>
     </div>
   );
 }
