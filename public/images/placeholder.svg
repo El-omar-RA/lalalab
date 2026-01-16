@@ -1,0 +1,8 @@
+﻿<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" fill="#0B1226"/>
+  <circle cx="150" cy="120" r="120" fill="#2563EB" fill-opacity="0.25"/>
+  <circle cx="650" cy="480" r="160" fill="#22C55E" fill-opacity="0.18"/>
+  <rect x="60" y="80" width="680" height="440" rx="24" fill="#060A14" fill-opacity="0.6" stroke="#FFFFFF" stroke-opacity="0.12"/>
+  <text x="400" y="310" text-anchor="middle" fill="#E7EEF8" font-family="Arial" font-size="28">LalaLab</text>
+  <text x="400" y="345" text-anchor="middle" fill="#9AA7BD" font-family="Arial" font-size="14">Image unavailable</text>
+</svg>
