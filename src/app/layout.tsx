@@ -31,8 +31,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: "/images/lalalab-logo.png",
-        width: 1200,
-        height: 900,
+        width: 1024,
+        height: 338,
         alt: "LalaLab logo",
       },
     ],
