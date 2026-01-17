@@ -14,6 +14,10 @@ def write_json(path: Path, data):
         handle.write("\n")
 
 
+def normalize_link(link: str) -> str:
+    return link.replace("/roduct/", "/product/")
+
+
 def main():
     parser = argparse.ArgumentParser(
         description="Merge Rootlab descriptions and reviews into LalaLab products."
@@ -54,15 +58,24 @@ def main():
         link = item.get("link")
         if link:
             details_by_link[link] = item
+            normalized = normalize_link(link)
+            if normalized != link:
+                details_by_link[normalized] = item
 
     updated = 0
     missing = 0
+    normalized_links = 0
     for product in products:
         link = product.get("link")
-        detail = details_by_link.get(link)
+        normalized_link = normalize_link(link) if link else link
+        detail = details_by_link.get(link) or details_by_link.get(normalized_link)
         if not detail:
             missing += 1
             continue
+
+        if link and normalized_link and link != normalized_link:
+            product["link"] = normalized_link
+            normalized_links += 1
 
         description = detail.get("description", "") or ""
         reviews = detail.get("reviews") or []
@@ -79,6 +92,8 @@ def main():
 
     print(f"Updated products: {updated}")
     print(f"Missing details: {missing}")
+    if normalized_links:
+        print(f"Fixed product links: {normalized_links}")
     print(f"Output: {output_path}")
 
 

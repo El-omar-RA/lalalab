@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import Link from "next/link";
 import { useState } from "react";
@@ -63,7 +63,7 @@ export default function CheckoutClient() {
               <div className="flex-1">
                 <p className="text-sm font-semibold text-text">{item.name}</p>
                 <p className="text-xs text-muted">
-                  {item.priceLabel} • Qty {item.quantity}
+                  {item.priceLabel} x Qty {item.quantity}
                 </p>
               </div>
             </div>
