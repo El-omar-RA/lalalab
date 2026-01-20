@@ -17,16 +17,17 @@ export const metadata = {
   description: "Browse all LalaLab mushroom cultivation products.",
 };
 
-export default function ShopPage({
+export default async function ShopPage({
   searchParams,
 }: {
-  searchParams: ShopSearchParams;
+  searchParams: Promise<ShopSearchParams>;
 }) {
+  const params = await searchParams;
   const { products, categories } = getCatalog();
-  const query = searchParams.q?.trim().toLowerCase() || "";
-  const category = searchParams.category || "";
-  const sort = searchParams.sort || "";
-  const page = Math.max(1, Number(searchParams.page || "1") || 1);
+  const query = params.q?.trim().toLowerCase() || "";
+  const category = params.category || "";
+  const sort = params.sort || "";
+  const page = Math.max(1, Number(params.page || "1") || 1);
 
   let filtered = products.filter((product) => {
     const matchesQuery = query
