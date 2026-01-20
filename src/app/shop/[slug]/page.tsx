@@ -1,13 +1,30 @@
 ﻿import Link from "next/link";
 import { notFound } from "next/navigation";
+import type { Metadata } from "next";
 import AddToCartButton from "@/components/cart/AddToCartButton";
 import ProductImage from "@/components/ProductImage";
 import { getProductBySlug } from "@/lib/catalog";
 import { formatPrice } from "@/lib/utils";
 
-export const metadata = {
-  title: "Product - LalaLab",
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const product = getProductBySlug(slug);
+
+  if (!product) {
+    return {
+      title: "Product Not Found - LalaLab",
+    };
+  }
+
+  return {
+    title: `${product.clean_name || product.name} - LalaLab`,
+    description: product.description?.substring(0, 160),
+  };
+}
 
 export default async function ProductDetailPage({
   params,

@@ -72,7 +72,7 @@ export default async function ShopPage({
           <input
             type="text"
             name="q"
-            defaultValue={searchParams.q}
+            defaultValue={params.q}
             placeholder="Search products"
             className="w-48 rounded-full border border-border bg-[rgba(6,10,20,0.6)] px-4 py-2 text-sm text-text"
             aria-label="Search products"
@@ -121,9 +121,9 @@ export default async function ShopPage({
         page={currentPage}
         totalPages={totalPages}
         baseParams={{
-          q: searchParams.q,
-          category: searchParams.category,
-          sort: searchParams.sort,
+          q: params.q,
+          category: params.category,
+          sort: params.sort,
         }}
       />
     </div>
