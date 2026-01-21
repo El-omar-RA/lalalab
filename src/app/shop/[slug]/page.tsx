@@ -79,12 +79,6 @@ export default async function ProductDetailPage({
             label="Add to cart"
             className="btn btn-primary mt-6"
           />
-          <div className="mt-8 text-sm text-muted">
-            <p>Source listing:</p>
-            <Link className="text-sm" href={product.link} target="_blank">
-              {product.link}
-            </Link>
-          </div>
         </div>
       </div>
       <div className="mt-12 grid gap-10 md:grid-cols-2">
