@@ -1,6 +1,10 @@
 ﻿import { notFound } from "next/navigation";
 import { guides } from "@/lib/learn";
 
+export function generateStaticParams() {
+  return guides.map((guide) => ({ slug: guide.slug }));
+}
+
 export default function GuidePage({ params }: { params: { slug: string } }) {
   const guide = guides.find((item) => item.slug === params.slug);
   if (!guide) {
