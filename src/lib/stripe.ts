@@ -9,9 +9,7 @@ export function getStripe() {
     throw new Error("STRIPE_SECRET_KEY is not set");
   }
   stripeClient = new Stripe(secretKey, {
-    // Pin to a real Stripe API version so auth works when the secret key is present.
-    // Use the latest supported version from the Stripe TypeScript types.
-    apiVersion: "2025-12-15.clover",
+    // Use the Stripe account's default API version.
   });
   return stripeClient;
 }
