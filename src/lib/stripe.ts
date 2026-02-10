@@ -10,7 +10,8 @@ export function getStripe() {
   }
   stripeClient = new Stripe(secretKey, {
     // Pin to a real Stripe API version so auth works when the secret key is present.
-    apiVersion: "2024-11-20",
+    // Use the latest supported version from the Stripe TypeScript types.
+    apiVersion: "2025-12-15.clover",
   });
   return stripeClient;
 }
