@@ -65,7 +65,9 @@ export default async function ShopPage({
         <div>
           <h1 className="text-3xl font-semibold text-text">Shop</h1>
           <p className="mt-2 text-sm text-muted">
-            {filtered.length} products across {categories.length} categories
+            {filtered.length} products across {categories.length} categories.
+            If you&apos;re just starting, look for beginner-friendly kits and basic
+            sterile tools first.
           </p>
         </div>
         <form method="get" className="flex flex-wrap gap-3">

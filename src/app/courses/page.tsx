@@ -12,8 +12,9 @@ export default function CoursesPage() {
       <div className="max-w-2xl">
         <h1 className="text-3xl font-semibold text-text">Courses</h1>
         <p className="mt-3 text-sm text-muted">
-          LalaLab courses are the primary experience. Start online or join the
-          Denmark, WA intensive.
+          New to mycology? Start with a beginner-friendly online course or join
+          the 3-day intensive in Denmark, WA. Both are designed so you can run a
+          clean, repeatable first grow at home.
         </p>
       </div>
       <div className="mt-10 grid gap-6 md:grid-cols-2">
