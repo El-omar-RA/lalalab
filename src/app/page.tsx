@@ -43,16 +43,16 @@ const testimonials = [
 
 const faqs = [
   {
-    q: "Do I need prior mycology experience?",
-    a: "No. The online course starts from sterile basics and scales to production.",
+    q: "I've never grown mushrooms before. Is this for me?",
+    a: "Yes. We assume you’re starting from zero. We cover safety, basic equipment, and simple first grows before anything advanced.",
   },
   {
-    q: "Where is the in-person workshop?",
-    a: "Denmark, Western Australia. Dates are released quarterly.",
+    q: "What equipment do I actually need to start?",
+    a: "You can begin with a still-air box, a few sterile consumables, and a small incubation space. We give you a clear shopping list and offer kits so you don’t buy random gear.",
   },
   {
-    q: "What tools do you recommend first?",
-    a: "Start with sterile consumables, agar plates, and a small incubation setup.",
+    q: "Will I be able to grow on my own after the course?",
+    a: "That’s the goal. By the end, you’ll understand contamination, how to read your cultures, and how to repeat the same grow instead of getting random results.",
   },
 ];
 
@@ -67,21 +67,31 @@ export default function HomePage() {
       <section className="relative overflow-hidden border-b border-border">
         <div className="mx-auto grid max-w-6xl gap-12 px-4 py-20 md:grid-cols-2 md:items-center">
           <div className="space-y-6">
-            <p className="pill">Futuristic cultivation systems</p>
+            <p className="pill">Start mushroom growing the right way</p>
             <h1 className="text-3xl font-semibold text-text md:text-5xl">
-              LalaLab - Mushroom Growing Supplies & Courses
+              LalaLab – Learn to Grow Mushrooms from Scratch
             </h1>
             <p className="text-base text-muted md:text-lg">
-              Minimal, precise, and built for repeatable outcomes. Learn modern
-              mycology and source clean lab-grade supplies.
+              No lab degree needed. We walk you from your first clean workspace
+              and spores all the way to consistent, safe harvests – with kits
+              and tools that actually match what you learn.
             </p>
-            <div className="flex flex-wrap gap-3">
-              <Link className="btn btn-primary" href="/courses/online">
-                Enroll Online
-              </Link>
-              <Link className="btn btn-secondary" href="/courses/denmark-wa">
-                Book Denmark (WA) 3-Day Intensive
-              </Link>
+            <div className="flex flex-col gap-3">
+              <div className="flex flex-wrap gap-3">
+                <Link className="btn btn-primary" href="/courses/online">
+                  Enroll Online
+                </Link>
+                <Link
+                  className="btn btn-secondary"
+                  href="/courses/denmark-wa"
+                >
+                  Book Denmark (WA) 3-Day Intensive
+                </Link>
+              </div>
+              <div className="flex flex-col gap-1 text-xs text-muted">
+                <span>Online: self-paced, beginner friendly.</span>
+                <span>Denmark (WA): small group, hands-on lab time.</span>
+              </div>
             </div>
           </div>
           <div className="grid gap-6">
@@ -120,7 +130,8 @@ export default function HomePage() {
           <div>
             <h2 className="text-2xl font-semibold text-text">Featured Courses</h2>
             <p className="mt-2 text-sm text-muted">
-              Course-first. Start online or join us in Denmark, WA.
+              Start with the basics, then move into real production. Choose a
+              self-paced online course or a 3-day intensive in Denmark, WA.
             </p>
           </div>
           <Link className="btn btn-ghost" href="/courses">
@@ -154,6 +165,33 @@ export default function HomePage() {
                 </p>
               </Link>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-4 py-16">
+        <h2 className="text-2xl font-semibold text-text">How it works</h2>
+        <div className="mt-8 grid gap-6 md:grid-cols-3">
+          <div className="glass rounded-2xl p-6">
+            <p className="text-sm font-semibold text-text">1. Learn the basics</p>
+            <p className="mt-2 text-sm text-muted">
+              We start with safety, contamination, and simple setups you can
+              actually run at home.
+            </p>
+          </div>
+          <div className="glass rounded-2xl p-6">
+            <p className="text-sm font-semibold text-text">2. Set up your first grow</p>
+            <p className="mt-2 text-sm text-muted">
+              Follow step-by-step workflows, using either your own equipment or
+              matched LalaLab kits.
+            </p>
+          </div>
+          <div className="glass rounded-2xl p-6">
+            <p className="text-sm font-semibold text-text">3. Repeat and scale</p>
+            <p className="mt-2 text-sm text-muted">
+              Once you get one clean, consistent run, we show you how to repeat it
+              and slowly increase volume without chaos.
+            </p>
           </div>
         </div>
       </section>
