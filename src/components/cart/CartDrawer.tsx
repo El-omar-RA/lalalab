@@ -128,9 +128,12 @@ export default function CartDrawer() {
               Some items have variable pricing. Subtotal reflects known prices.
             </p>
           ) : null}
+          <p className="mt-2 text-xs text-muted">
+            You can remove items or change quantities here before checkout.
+          </p>
           <div className="mt-4 flex gap-3">
             <Link className="btn btn-primary w-full" href="/checkout">
-              Go to Checkout
+              Review &amp; Checkout
             </Link>
           </div>
         </div>
