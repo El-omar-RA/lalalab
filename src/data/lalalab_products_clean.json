@@ -1,1 +1,162 @@
-[]
+[
+  {
+    "name": "Oyster Mushroom Spawn (Pleurotus ostreatus)",
+    "clean_name": "Oyster Mushroom Spawn",
+    "category": "Mushroom Spawn",
+    "price": "$24.99",
+    "price_min": "$24.99",
+    "link": "https://lalalab.au/products/oyster-spawn",
+    "image": "https://images.unsplash.com/photo-1576076567699-247103a75b10?w=800&auto=format&fit=crop&q=60",
+    "description": "Premium oyster mushroom grain spawn on sterilized rye berries. Colonized and ready to expand to bulk substrate. Approximately 1.5kg per bag."
+  },
+  {
+    "name": "Lion's Mane Spawn (Hericium erinaceus)",
+    "clean_name": "Lion's Mane Spawn",
+    "category": "Mushroom Spawn",
+    "price": "$29.99",
+    "price_min": "$29.99",
+    "link": "https://lalalab.au/products/lions-mane-spawn",
+    "image": "https://images.unsplash.com/photo-1597715508708-6031243a76e2?w=800&auto=format&fit=crop&q=60",
+    "description": "Coral-like lion's mane culture on millet. Fast colonizer with beautiful fruiting bodies. Perfect for functional mushroom enthusiasts. 1.5kg bag."
+  },
+  {
+    "name": "Shiitake Spawn (Lentinula edodes)",
+    "clean_name": "Shiitake Spawn",
+    "category": "Mushroom Spawn",
+    "price": "$34.99",
+    "price_min": "$34.99",
+    "link": "https://lalalab.au/products/shiitake-spawn",
+    "image": "https://images.unsplash.com/photo-1576076567699-247103a75b10?w=800&auto=format&fit=crop&q=60",
+    "description": "Commercial grade shiitake sawdust spawn on hardwood. Traditional strain with excellent flavor and yield. 2kg block."
+  },
+  {
+    "name": "King Oyster Spawn (Pleurotus eryngii)",
+    "clean_name": "King Oyster Spawn",
+    "category": "Mushroom Spawn",
+    "price": "$32.99",
+    "price_min": "$32.99",
+    "link": "https://lalalab.au/products/king-oyster-spawn",
+    "image": "https://images.unsplash.com/photo-1597715508708-6031243a76e2?w=800&auto=format&fit=crop&q=60",
+    "description": "Meaty king oyster spawn for high-end culinary use. Produces thick stems with small caps. 1.5kg bag."
+  },
+  {
+    "name": "Pre-Poured Agar Plates (MEA)",
+    "clean_name": "Agar Plates MEA",
+    "category": "Agar Plates & Media",
+    "price": "$18.99",
+    "price_min": "$18.99",
+    "link": "https://lalalab.au/products/agar-plates-mea",
+    "image": "https://images.unsplash.com/photo-1576086213369-97a306d36557?w=800&auto=format&fit=crop&q=60",
+    "description": "Sterile malt extract agar plates, 90mm, parafilmed and ready for transfers. Pack of 10 plates in sealed sleeve."
+  },
+  {
+    "name": "Pre-Poured Agar Plates (PDA)",
+    "clean_name": "Agar Plates PDA",
+    "category": "Agar Plates & Media",
+    "price": "$19.99",
+    "price_min": "$19.99",
+    "link": "https://lalalab.au/products/agar-plates-pda",
+    "image": "https://images.unsplash.com/photo-1576086213369-97a306d36557?w=800&auto=format&fit=crop&q=60",
+    "description": "Potato dextrose agar plates for fast mycelial growth. 90mm sterile plates, pack of 10. Ideal for isolation work."
+  },
+  {
+    "name": "Sterile Rye Grain Bags",
+    "clean_name": "Rye Grain Bags",
+    "category": "Substrates",
+    "price": "$14.99",
+    "price_min": "$14.99",
+    "link": "https://lalalab.au/products/rye-grain-bags",
+    "image": "https://images.unsplash.com/photo-1587049352846-4a222e784d38?w=800&auto=format&fit=crop&q=60",
+    "description": "Self-healing injection port bags with 2kg organic rye. Sterilized and sealed, ready for inoculation. Filter patch for gas exchange."
+  },
+  {
+    "name": "Sterile Millet Grain Bags",
+    "clean_name": "Millet Grain Bags",
+    "category": "Substrates",
+    "price": "$16.99",
+    "price_min": "$16.99",
+    "link": "https://lalalab.au/products/millet-grain-bags",
+    "image": "https://images.unsplash.com/photo-1587049352846-4a222e784d38?w=800&auto=format&fit=crop&q=60",
+    "description": "Smaller grain size for faster colonization. 2kg millet in filter patch bags with injection ports. 5-pack."
+  },
+  {
+    "name": "Master's Mix Substrate Blocks",
+    "clean_name": "Masters Mix Blocks",
+    "category": "Substrates",
+    "price": "$22.99",
+    "price_min": "$22.99",
+    "link": "https://lalalab.au/products/masters-mix",
+    "image": "https://images.unsplash.com/photo-1597715508708-6031243a76e2?w=800&auto=format&fit=crop&q=60",
+    "description": "Hardwood pellets + soy hulls in grow bags, hydrated and sterilized. Perfect for gourmet oysters and lion's mane. 5kg blocks."
+  },
+  {
+    "name": "Still Air Box (SAB) - Premium",
+    "clean_name": "Still Air Box",
+    "category": "Mycology Tools",
+    "price": "$149.99",
+    "price_min": "$149.99",
+    "link": "https://lalalab.au/products/still-air-box",
+    "image": "https://images.unsplash.com/photo-1581093458791-9d42e3c7e117?w=800&auto=format&fit=crop&q=60",
+    "description": "Professional-grade 60L still air box with arm ports, clear polycarbonate lid, and internal shelf. Essential for sterile technique."
+  },
+  {
+    "name": "Desktop Laminar Flow Hood",
+    "clean_name": "Laminar Flow Hood",
+    "category": "Mycology Tools",
+    "price": "$899.99",
+    "price_min": "$899.99",
+    "link": "https://lalalab.au/products/laminar-flow-hood",
+    "image": "https://images.unsplash.com/photo-1576086213369-97a306d36557?w=800&auto=format&fit=crop&q=60",
+    "description": "HEPA-filtered horizontal flow hood. 2ft x 2ft workspace, 99.97% particle filtration. The ultimate contamination prevention tool."
+  },
+  {
+    "name": "All-American Pressure Cooker 921",
+    "clean_name": "Pressure Cooker 921",
+    "category": "Mycology Tools",
+    "price": "$449.99",
+    "price_min": "$449.99",
+    "link": "https://lalalab.au/products/pressure-cooker-921",
+    "image": "https://images.unsplash.com/photo-1581093458791-9d42e3c7e117?w=800&auto=format&fit=crop&q=60",
+    "description": "21.5 quart heavy-duty pressure cooker. No gasket design, metal-to-metal seal. Lifetime investment for serious cultivators."
+  },
+  {
+    "name": "Beginner Spray & Grow Kit",
+    "clean_name": "Spray and Grow Kit",
+    "category": "Beginner Kits",
+    "price": "$39.99",
+    "price_min": "$39.99",
+    "link": "https://lalalab.au/products/spray-grow-kit",
+    "image": "https://images.unsplash.com/photo-1597715508708-6031243a76e2?w=800&auto=format&fit=crop&q=60",
+    "description": "Everything you need to grow your first mushrooms: colonized oyster block, spray bottle, humidity tent, and step-by-step guide."
+  },
+  {
+    "name": "Liquid Culture Jars (4-pack)",
+    "clean_name": "Liquid Culture Jars",
+    "category": "Mycology Tools",
+    "price": "$34.99",
+    "price_min": "$34.99",
+    "link": "https://lalalab.au/products/liquid-culture-jars",
+    "image": "https://images.unsplash.com/photo-1576086213369-97a306d36557?w=800&auto=format&fit=crop&q=60",
+    "description": "Modified lids with injection ports and sterile filters. Pre-filled with LC media. 500ml glass jars, 4-pack with stir bars."
+  },
+  {
+    "name": "Sterile Scalpel Blades #11 (10-pack)",
+    "clean_name": "Scalpel Blades",
+    "category": "Mycology Tools",
+    "price": "$8.99",
+    "price_min": "$8.99",
+    "link": "https://lalalab.au/products/scalpel-blades",
+    "image": "https://images.unsplash.com/photo-1576086213369-97a306d36557?w=800&auto=format&fit=crop&q=60",
+    "description": "Carbon steel #11 scalpel blades, individually sterile wrapped. Compatible with standard scalpel handles. Essential for agar transfers."
+  },
+  {
+    "name": "Parafilm M (5cm x 75m)",
+    "clean_name": "Parafilm",
+    "category": "Mycology Tools",
+    "price": "$24.99",
+    "price_min": "$24.99",
+    "link": "https://lalalab.au/products/parafilm",
+    "image": "https://images.unsplash.com/photo-1576086213369-97a306d36557?w=800&auto=format&fit=crop&q=60",
+    "description": "The gold standard for sealing agar plates. Semi-permeable, self-sealing, molds to any shape. One roll seals hundreds of plates."
+  }
+]
